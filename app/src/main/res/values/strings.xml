@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">inspirathon</string>
+    <string name="are_you_alone">Are You Alone</string>
+    <string name="help_us_find_you">Help Us find You</string>
+    <string-array name="names">
+        <item>YES</item>
+        <item>NO</item>
+
+    </string-array>
+
 </resources>

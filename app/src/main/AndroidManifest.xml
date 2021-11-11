@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Inspirathon">
-        <activity android:name=".SettingsActivity"></activity>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/round_button" />
+
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".LinksActivity" />
         <activity android:name=".DangerActivity" />
         <activity android:name=".NotSafeActivity" />
