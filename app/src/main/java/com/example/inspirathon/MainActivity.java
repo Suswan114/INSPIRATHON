@@ -3,6 +3,7 @@ package com.example.inspirathon;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -20,24 +21,28 @@ public class MainActivity extends AppCompatActivity {
         notSAfeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity( new Intent( getApplicationContext(), NotSafeActivity.class ) );
                 //Call NOT SAFE ACTIVITY
             }
         });
         dangerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity( new Intent( getApplicationContext(), DangerActivity.class ) );
                 //Call DANGER ACTIVITY
             }
         });
         linkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity( new Intent( getApplicationContext(), LinksActivity.class ) );
                 //Call LINKS ACTIVITY
             }
         });
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity( new Intent( getApplicationContext(), SettingsActivity.class ) );
                 //Call SETTINGS ACTIVITY
             }
         });
